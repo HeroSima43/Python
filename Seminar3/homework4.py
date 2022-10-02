@@ -12,3 +12,10 @@ while N > 0:
     my_list.append(ostatok)
 my_list.reverse()
 print(my_list)
+
+binar = ''
+
+for i in my_list:
+    binar += str(i)
+print(binar)
+
