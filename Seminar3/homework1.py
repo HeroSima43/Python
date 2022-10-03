@@ -1,13 +1,16 @@
 # Задайте список из нескольких чисел. Напишите программу, которая найдёт сумму элементов списка, стоящих на нечётной позиции.
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
-my_list = [2, 3, 5, 9, 3, 8]
-suma = 0
-count = 0
-for i in my_list:
-    if count % 2 == 0:
-        count += 1
-    else:
-        suma += i
-        count += 1
-print(suma)
+my_list = [2, 3, 5, 9, 3]
+# suma = 0
+# count = 0
+# for i in my_list:
+#     if count % 2 == 0:
+#         count += 1
+#     else:
+#         suma += i
+#         count += 1
+# print(suma)
+
+
+print(f'Sum => {sum(my_list[1::2])}')
