@@ -28,5 +28,17 @@ ratios = get_ratios(k)
 polynom1 = get_polynomial(k, ratios)
 print(polynom1)
 
-with open('Seminar4/homework4/file.txt', 'w') as data:
+with open('Seminar4/homework4/file1.txt', 'w') as data:
+    data.write(polynom1)
+
+
+# Второй многочлен для следующей задачи:
+
+k = int(input('Введите натуральную степень: '))
+
+ratios = get_ratios(k)
+polynom1 = get_polynomial(k, ratios)
+print(polynom1)
+
+with open('Seminar4/homework4/file2.txt', 'w') as data:
     data.write(polynom1)
